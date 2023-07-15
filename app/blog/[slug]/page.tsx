@@ -8,7 +8,7 @@ const delay = (time) => new Promise((resolve) => {
 });
 const getData = async (slug) => {
     const post = await delay(5000);
-    return post;
+    return {slug};
 }
 
 export default async function BlogPost({params}) {
