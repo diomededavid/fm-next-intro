@@ -1,7 +1,10 @@
-'use client'
+import {delay} from "@/lib/delay";
 import HeaderLink from "@/components/HeaderLink";
 
-const Header = () => {
+// @ts-ignore
+const Header = async () => {
+    await delay(5000);
+
     return (
         <>
             <HeaderLink/>
@@ -9,4 +12,5 @@ const Header = () => {
         </>
     )
 }
-export default Header
+
+export default Header;
